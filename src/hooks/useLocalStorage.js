@@ -9,7 +9,7 @@ export const useLocalStorage = () =>
   });
 
   const setValue = (value) => {
-
+    setStoredValue(value);
   };
 
   return [storedValue];
