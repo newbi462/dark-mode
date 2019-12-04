@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { useLocalStorage } from "/useLocalStorage";
+import { useLocalStorage } from "./useLocalStorage";
 
 useEffect(() => {
   const bodyTag = document.querySelector('body')
