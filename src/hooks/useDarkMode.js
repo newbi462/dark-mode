@@ -10,7 +10,7 @@ useEffect(() => {
   if (useLocalStorage[0] === false) {
     bodyTag.classList.remove('dark-mode');
   }
-},[])
+},[useLocalStorage[0]])
 
 export const useDarkMode = () => {
   const [someValue, setSomeValue] = useLocalStorage("myKeyIsLSNeedsATeacherDay");
