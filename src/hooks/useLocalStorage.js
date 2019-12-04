@@ -1,5 +1,5 @@
 import { useState } from "react";
 
-export const useLocalStorage = () => {
-
+export const useLocalStorage = () =>
+  const [storedValue, setStoredValue] = useState();
 };
