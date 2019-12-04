@@ -14,7 +14,7 @@ export const useLocalStorage = () =>
     setStoredValue(value);// ???in readmen says add after, but in exsample is first?
   };
 
-  return [storedValue];
+  return [storedValue, setValue];
 };
 // To retrieve an item from localStorage, call localStorage.getItem('itemName')
 // If that item doesn't exist, it will return undefined
