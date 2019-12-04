@@ -7,6 +7,9 @@ useEffect(() => {
   if (useLocalStorage[0] === ture) {
     bodyTag.classList.add('dark-mode');
   }
+  if (useLocalStorage[0] === false) {
+    bodyTag.classList.remove('dark-mode');
+  }
 },[])
 
 export const useDarkMode = () => {
