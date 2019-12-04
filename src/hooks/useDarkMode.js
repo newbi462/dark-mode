@@ -13,7 +13,7 @@ useEffect(() => {
 },[useLocalStorage[0]])
 
 export const useDarkMode = () => {
-  const [someValue, setSomeValue] = useLocalStorage("myKeyIsLSNeedsATeacherDay
+  const [someValue, setSomeValue] = useLocalStorage("myKeyIsLSNeedsATeacherDay");
 
   return [useLocalStorage[0], useLocalStorage[1]]
 };
