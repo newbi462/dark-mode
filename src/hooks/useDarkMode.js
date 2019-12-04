@@ -5,7 +5,7 @@ import { useLocalStorage } from "/useLocalStorage";
 useEffect(() => {
   const bodyTag = document.querySelector('body')
   if (useLocalStorage[0] === ture) {
-    bodyTag.classList.add('theclass to add');
+    bodyTag.classList.add('dark-mode');
   }
 },[])
 
