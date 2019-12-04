@@ -7,6 +7,8 @@ export const useLocalStorage = () =>
     // Parse and return stored json or, if undefined, return initialValue
     return item ? JSON.parse(item) : initialValue;
   });
+
+  return [storedValue];
 };
 // To retrieve an item from localStorage, call localStorage.getItem('itemName')
 // If that item doesn't exist, it will return undefined
