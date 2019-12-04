@@ -8,6 +8,10 @@ export const useLocalStorage = () =>
     return item ? JSON.parse(item) : initialValue;
   });
 
+  const setValue = (value) => {
+
+  };
+
   return [storedValue];
 };
 // To retrieve an item from localStorage, call localStorage.getItem('itemName')
