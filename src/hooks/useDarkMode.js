@@ -10,13 +10,17 @@ export const useDarkMode = () => {
   useEffect(() => {
     console.log(useLocalStorage[0]);
     const bodyTag = document.querySelector('body')
-    if (useLocalStorage[0] == true) {
+    if (someValue == true) {
       bodyTag.classList.add('dark-mode');
     }
-    if (useLocalStorage[0] == false) {
+    if (someValue == false) {
       bodyTag.classList.remove('dark-mode');
     }
-  },[useLocalStorage[0]])
+  },[someValue])
 
-  return [useLocalStorage[0], useLocalStorage[1]]
+  return [someValue, setSomeValue]
 };
+
+
+// CONSEPT:
+// [someValue, setSomeValue] == [useLocalStorage[0], useLocalStorage[1]] == [storedValue, setValue]
